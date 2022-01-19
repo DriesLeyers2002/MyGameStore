@@ -3,9 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyGameStore", "MyGameStore\MyGameStore.csproj", "{E2A57614-A5EA-4EC9-BA8A-92228D61005B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyGameStore", "MyGameStore\MyGameStore.csproj", "{E2A57614-A5EA-4EC9-BA8A-92228D61005B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AC45A211-8DDB-4AE4-8D6D-6E07D062532F} = {AC45A211-8DDB-4AE4-8D6D-6E07D062532F}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyGameStore.Data", "MyGameStore.Data\MyGameStore.Data.csproj", "{4586C08F-7B63-49BC-AD6A-7E4BCE618516}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyGameStore.DLL", "MyGameStore.DLL\MyGameStore.DLL.csproj", "{AC45A211-8DDB-4AE4-8D6D-6E07D062532F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ABFC7372-2CED-4169-93BE-9E94BEE1BBA4} = {ABFC7372-2CED-4169-93BE-9E94BEE1BBA4}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyGameStore.Data", "MyGameStore.Data\MyGameStore.Data.csproj", "{ABFC7372-2CED-4169-93BE-9E94BEE1BBA4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +25,14 @@ Global
 		{E2A57614-A5EA-4EC9-BA8A-92228D61005B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2A57614-A5EA-4EC9-BA8A-92228D61005B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2A57614-A5EA-4EC9-BA8A-92228D61005B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4586C08F-7B63-49BC-AD6A-7E4BCE618516}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4586C08F-7B63-49BC-AD6A-7E4BCE618516}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4586C08F-7B63-49BC-AD6A-7E4BCE618516}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4586C08F-7B63-49BC-AD6A-7E4BCE618516}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC45A211-8DDB-4AE4-8D6D-6E07D062532F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC45A211-8DDB-4AE4-8D6D-6E07D062532F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC45A211-8DDB-4AE4-8D6D-6E07D062532F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC45A211-8DDB-4AE4-8D6D-6E07D062532F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABFC7372-2CED-4169-93BE-9E94BEE1BBA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABFC7372-2CED-4169-93BE-9E94BEE1BBA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABFC7372-2CED-4169-93BE-9E94BEE1BBA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABFC7372-2CED-4169-93BE-9E94BEE1BBA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

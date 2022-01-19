@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using MyGameStore.Context;
-using MyGameStore.Model;
+using MyGameStore.Data.Model;
+using MyGameStore.DLL.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -14,31 +14,32 @@ namespace MyGameStore.Controllers
     [ApiController]
     public class PeopleController : ControllerBase
     {
-        private MyGameStoreContext _context;
+        private IPersonService personService;
 
-        public PeopleController(MyGameStoreContext context)
+        public PeopleController(IPersonService context)
         {
-            _context = context;
+            personService = context;
         }
 
         [HttpPost]
         public IActionResult Post([FromBody] Person person)
         {
-            if(_context.Stores.FirstOrDefault(x => x.Id == person.StoreId) is not null)
+            try
             {
-                _context.People.Add(person);
-                _context.SaveChanges();
+                personService.Post(person);
                 return Created("https://localhost:44317/api/People/", person);
             }
+            catch(Exception e)
+            {
+                return NotFound();
+            }
 
-            return NotFound();
-            
         }
 
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok(_context.People);
+            return Ok(personService.Get());
         }
 
         [Route("{id}")]
@@ -47,13 +48,9 @@ namespace MyGameStore.Controllers
         {
             if (id == person.Id)
             {
-                if (_context.People.FirstOrDefault(x => x.Id == person.Id) is not null)
-                {
-                    _context.Update(person);
-                    _context.SaveChanges();
+                personService.Update(person);
 
-                    return Ok();
-                }
+                return Ok();
             }
 
             return NotFound();
@@ -63,15 +60,7 @@ namespace MyGameStore.Controllers
         [HttpDelete]
         public IActionResult Delete(int id)
         {
-            Person person = new() { Id = id };
-            
-            if(person is not null)
-            {
-                _context.Remove(person);
-                _context.SaveChanges();
-
-                return Ok();
-            }
+            personService.Delete(id);
 
             return NotFound();
         }

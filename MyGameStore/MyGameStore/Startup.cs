@@ -8,7 +8,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using MyGameStore.Context;
+using MyGameStore.DLL.Interfaces;
+using MyGameStore.DLL.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,6 +36,9 @@ namespace MyGameStore
             });
 
             services.AddDbContext<MyGameStoreContext>(options => options.UseSqlServer("name=ConnectionStrings:MyGameStore"));
+
+            services.AddScoped<IPersonService, PersonService>();
+            services.AddScoped<IStoreService, StoreService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
