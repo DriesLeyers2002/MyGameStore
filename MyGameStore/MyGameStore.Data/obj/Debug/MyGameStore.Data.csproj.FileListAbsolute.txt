@@ -1,0 +1,6 @@
+C:\Users\dries\Documents\.NET Advanced\Labo 1\MyGameStore\MyGameStore.Data\bin\Debug\MyGameStore.Data.dll
+C:\Users\dries\Documents\.NET Advanced\Labo 1\MyGameStore\MyGameStore.Data\bin\Debug\MyGameStore.Data.pdb
+C:\Users\dries\Documents\.NET Advanced\Labo 1\MyGameStore\MyGameStore.Data\obj\Debug\MyGameStore.Data.csproj.AssemblyReference.cache
+C:\Users\dries\Documents\.NET Advanced\Labo 1\MyGameStore\MyGameStore.Data\obj\Debug\MyGameStore.Data.csproj.CoreCompileInputs.cache
+C:\Users\dries\Documents\.NET Advanced\Labo 1\MyGameStore\MyGameStore.Data\obj\Debug\MyGameStore.Data.dll
+C:\Users\dries\Documents\.NET Advanced\Labo 1\MyGameStore\MyGameStore.Data\obj\Debug\MyGameStore.Data.pdb
