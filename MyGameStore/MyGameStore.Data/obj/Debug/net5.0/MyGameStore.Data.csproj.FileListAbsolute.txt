@@ -1,0 +1,15 @@
+C:\Users\dries\Documents\GitHub\MyGameStore\MyGameStore\MyGameStore.Data\obj\Debug\net5.0\MyGameStore.Data.csproj.AssemblyReference.cache
+C:\Users\dries\Documents\GitHub\MyGameStore\MyGameStore\MyGameStore.Data\obj\Debug\net5.0\MyGameStore.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dries\Documents\GitHub\MyGameStore\MyGameStore\MyGameStore.Data\obj\Debug\net5.0\MyGameStore.Data.AssemblyInfoInputs.cache
+C:\Users\dries\Documents\GitHub\MyGameStore\MyGameStore\MyGameStore.Data\obj\Debug\net5.0\MyGameStore.Data.AssemblyInfo.cs
+C:\Users\dries\Documents\GitHub\MyGameStore\MyGameStore\MyGameStore.Data\obj\Debug\net5.0\MyGameStore.Data.csproj.CoreCompileInputs.cache
+C:\Users\dries\Documents\GitHub\MyGameStore\MyGameStore\MyGameStore.Data\bin\Debug\net5.0\MyGameStore.Data.deps.json
+C:\Users\dries\Documents\GitHub\MyGameStore\MyGameStore\MyGameStore.Data\bin\Debug\net5.0\MyGameStore.Data.runtimeconfig.json
+C:\Users\dries\Documents\GitHub\MyGameStore\MyGameStore\MyGameStore.Data\bin\Debug\net5.0\MyGameStore.Data.runtimeconfig.dev.json
+C:\Users\dries\Documents\GitHub\MyGameStore\MyGameStore\MyGameStore.Data\bin\Debug\net5.0\MyGameStore.Data.dll
+C:\Users\dries\Documents\GitHub\MyGameStore\MyGameStore\MyGameStore.Data\bin\Debug\net5.0\ref\MyGameStore.Data.dll
+C:\Users\dries\Documents\GitHub\MyGameStore\MyGameStore\MyGameStore.Data\bin\Debug\net5.0\MyGameStore.Data.pdb
+C:\Users\dries\Documents\GitHub\MyGameStore\MyGameStore\MyGameStore.Data\obj\Debug\net5.0\MyGameStore.Data.dll
+C:\Users\dries\Documents\GitHub\MyGameStore\MyGameStore\MyGameStore.Data\obj\Debug\net5.0\ref\MyGameStore.Data.dll
+C:\Users\dries\Documents\GitHub\MyGameStore\MyGameStore\MyGameStore.Data\obj\Debug\net5.0\MyGameStore.Data.pdb
+C:\Users\dries\Documents\GitHub\MyGameStore\MyGameStore\MyGameStore.Data\obj\Debug\net5.0\MyGameStore.Data.genruntimeconfig.cache

@@ -5,55 +5,41 @@ using System.Text;
 using System.Threading.Tasks;
 using MyGameStore.Data.Context;
 using MyGameStore.Data.Model;
+using MyGameStore.Data.UOW;
 using MyGameStore.DLL.Interfaces;
 
 namespace MyGameStore.DLL.Services
 {
     public class PersonService : IPersonService
     {
-        private MyGameStoreContext _context;
+        private IUnitOfWork _unitOfWork;
 
-        public PersonService(MyGameStoreContext context)
+        public PersonService(IUnitOfWork unitOfWork)
         {
-            _context = context;
+            _unitOfWork = unitOfWork;
         }
 
         public void Delete(int id)
         {
-            Person person = new() { Id = id };
-
-            if (person is not null)
-            {
-                _context.Remove(person);
-                _context.SaveChanges();
-            }
+            _unitOfWork.PersonRepositorie.Delete(id);
+            _unitOfWork.Commit();
         }
 
         public List<Person> Get()
         {
-            return _context.People.ToList();
+            return _unitOfWork.PersonRepositorie.Get();
         }
 
         public void Post(Person person)
         {
-            if (_context.Stores.FirstOrDefault(x => x.Id == person.StoreId) is not null)
-            {
-                _context.People.Add(person);
-                _context.SaveChanges();
-            }
-            else
-            {
-                throw new Exception();
-            }
+            _unitOfWork.PersonRepositorie.Post(person);
+            _unitOfWork.Commit();
         }
 
         public void Update(Person person)
         {
-            if (_context.People.FirstOrDefault(x => x.Id == person.Id) is not null)
-            {
-                _context.Update(person);
-                _context.SaveChanges();
-            }
+            _unitOfWork.PersonRepositorie.Update(person);
+            _unitOfWork.Commit();
         }
     }
 }

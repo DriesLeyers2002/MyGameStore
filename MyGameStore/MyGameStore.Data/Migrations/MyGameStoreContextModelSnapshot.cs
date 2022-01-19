@@ -18,7 +18,7 @@ namespace MyGameStore.Data.Migrations
                 .HasAnnotation("ProductVersion", "5.0.13")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("MyGameStore.Model.Person", b =>
+            modelBuilder.Entity("MyGameStore.Data.Model.Person", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -56,96 +56,96 @@ namespace MyGameStore.Data.Migrations
                         new
                         {
                             Id = 1,
-                            Email = "liam_farrell@erdmananderson.info",
-                            FirstName = "Sadie",
+                            Email = "bettye@kubreichel.us",
+                            FirstName = "Lucinda",
                             Gender = 1,
-                            LastName = "Ruecker",
+                            LastName = "Gorczany",
                             StoreId = 2
                         },
                         new
                         {
                             Id = 2,
-                            Email = "myrtis@wunsch.ca",
-                            FirstName = "Magnus",
+                            Email = "miguel@tremblay.ca",
+                            FirstName = "Emily",
                             Gender = 1,
-                            LastName = "Ziemann",
+                            LastName = "Koelpin",
                             StoreId = 2
                         },
                         new
                         {
                             Id = 3,
-                            Email = "abe@kozey.ca",
-                            FirstName = "Felicity",
+                            Email = "izabella@bergnaum.biz",
+                            FirstName = "Dustin",
                             Gender = 1,
-                            LastName = "Wilderman",
+                            LastName = "Krajcik",
                             StoreId = 2
                         },
                         new
                         {
                             Id = 4,
-                            Email = "reinhold.lang@binskuphal.us",
-                            FirstName = "Raul",
+                            Email = "nicolas_kub@yundtbernier.com",
+                            FirstName = "Keon",
                             Gender = 1,
-                            LastName = "McGlynn",
+                            LastName = "Blick",
                             StoreId = 2
                         },
                         new
                         {
                             Id = 5,
-                            Email = "elijah@hyatt.ca",
-                            FirstName = "Dominic",
+                            Email = "everett_wisozk@wisoky.name",
+                            FirstName = "Major",
                             Gender = 1,
-                            LastName = "Hirthe",
+                            LastName = "Murphy",
                             StoreId = 2
                         },
                         new
                         {
                             Id = 6,
-                            Email = "lauriane.hegmann@strosinritchie.ca",
-                            FirstName = "Tate",
+                            Email = "quentin.senger@abbott.com",
+                            FirstName = "Elisa",
                             Gender = 1,
-                            LastName = "Rath",
+                            LastName = "Boehm",
                             StoreId = 2
                         },
                         new
                         {
                             Id = 7,
-                            Email = "amya@stroman.co.uk",
-                            FirstName = "Genoveva",
+                            Email = "gudrun@abshire.name",
+                            FirstName = "Karlee",
                             Gender = 1,
-                            LastName = "Harvey",
+                            LastName = "Becker",
                             StoreId = 2
                         },
                         new
                         {
                             Id = 8,
-                            Email = "cordell.rempel@willmshessel.com",
-                            FirstName = "Trinity",
+                            Email = "darrick@bergealtenwerth.co.uk",
+                            FirstName = "Faustino",
                             Gender = 1,
-                            LastName = "Ryan",
+                            LastName = "Funk",
                             StoreId = 2
                         },
                         new
                         {
                             Id = 9,
-                            Email = "hillard@homenick.us",
-                            FirstName = "Kenna",
+                            Email = "johan_swift@crooks.name",
+                            FirstName = "Dolores",
                             Gender = 1,
-                            LastName = "Kreiger",
+                            LastName = "Kirlin",
                             StoreId = 2
                         },
                         new
                         {
                             Id = 10,
-                            Email = "hubert.wisoky@jakubowski.name",
-                            FirstName = "Andrew",
+                            Email = "felix_tillman@rippin.us",
+                            FirstName = "Kyleigh",
                             Gender = 1,
-                            LastName = "Prosacco",
+                            LastName = "Gottlieb",
                             StoreId = 2
                         });
                 });
 
-            modelBuilder.Entity("MyGameStore.Model.Store", b =>
+            modelBuilder.Entity("MyGameStore.Data.Model.Store", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -192,208 +192,208 @@ namespace MyGameStore.Data.Migrations
                         new
                         {
                             Id = 1,
-                            City = "Haleighshire",
+                            City = "Port Lauriane",
                             IsFranchiseStore = true,
-                            Name = "Kadin",
-                            Number = "64",
-                            Street = "Frami Harbor",
-                            Zipcode = "1434"
+                            Name = "Milton",
+                            Number = "77",
+                            Street = "Sam Mews",
+                            Zipcode = "2698"
                         },
                         new
                         {
                             Id = 2,
-                            City = "Gregshire",
-                            IsFranchiseStore = true,
-                            Name = "Creola",
-                            Number = "3",
-                            Street = "Nikolaus Pike",
-                            Zipcode = "1007"
+                            City = "New Amiya",
+                            IsFranchiseStore = false,
+                            Name = "Raoul",
+                            Number = "93",
+                            Street = "Zemlak Harbor",
+                            Zipcode = "1468"
                         },
                         new
                         {
                             Id = 3,
-                            City = "Frederikville",
+                            City = "West Cortneymouth",
                             IsFranchiseStore = true,
-                            Name = "Kenny",
-                            Number = "10",
-                            Street = "Hessel Walks",
-                            Zipcode = "2944"
+                            Name = "Tony",
+                            Number = "49",
+                            Street = "Dooley Drives",
+                            Zipcode = "2510"
                         },
                         new
                         {
                             Id = 4,
-                            City = "New Laurenville",
+                            City = "South Raystad",
                             IsFranchiseStore = true,
-                            Name = "Zoila",
-                            Number = "72",
-                            Street = "Fahey Falls",
-                            Zipcode = "2507"
+                            Name = "Tavares",
+                            Number = "33",
+                            Street = "Lowe Skyway",
+                            Zipcode = "610"
                         },
                         new
                         {
                             Id = 5,
-                            City = "Jadeburgh",
-                            IsFranchiseStore = true,
-                            Name = "Jamey",
-                            Number = "9",
-                            Street = "Katarina Mill",
-                            Zipcode = "1458"
+                            City = "South Rickeyborough",
+                            IsFranchiseStore = false,
+                            Name = "Jaylon",
+                            Number = "7",
+                            Street = "Kohler Junction",
+                            Zipcode = "1334"
                         },
                         new
                         {
                             Id = 6,
-                            City = "New Blancaside",
-                            IsFranchiseStore = true,
-                            Name = "Sophia",
-                            Number = "17",
-                            Street = "Terry Mountains",
-                            Zipcode = "1352"
+                            City = "Port Milanstad",
+                            IsFranchiseStore = false,
+                            Name = "Will",
+                            Number = "84",
+                            Street = "Mireille Park",
+                            Zipcode = "2309"
                         },
                         new
                         {
                             Id = 7,
-                            City = "Milofort",
+                            City = "New Llewellyn",
                             IsFranchiseStore = true,
-                            Name = "Alisha",
-                            Number = "6",
-                            Street = "Schulist Cove",
-                            Zipcode = "797"
+                            Name = "Chyna",
+                            Number = "82",
+                            Street = "Gregory Fork",
+                            Zipcode = "442"
                         },
                         new
                         {
                             Id = 8,
-                            City = "East Monroehaven",
-                            IsFranchiseStore = true,
-                            Name = "Morris",
-                            Number = "38",
-                            Street = "Barbara Ridge",
-                            Zipcode = "1125"
+                            City = "North Robbieburgh",
+                            IsFranchiseStore = false,
+                            Name = "Darlene",
+                            Number = "84",
+                            Street = "Kulas Roads",
+                            Zipcode = "228"
                         },
                         new
                         {
                             Id = 9,
-                            City = "Stammbury",
+                            City = "Reneeshire",
                             IsFranchiseStore = true,
-                            Name = "Kristina",
-                            Number = "26",
-                            Street = "Cleo Burg",
-                            Zipcode = "183"
+                            Name = "Ashtyn",
+                            Number = "19",
+                            Street = "Ward Vista",
+                            Zipcode = "1611"
                         },
                         new
                         {
                             Id = 10,
-                            City = "West Price",
+                            City = "Hamillshire",
                             IsFranchiseStore = false,
-                            Name = "Valentin",
-                            Number = "12",
-                            Street = "Alena Meadows",
-                            Zipcode = "116"
+                            Name = "Valentine",
+                            Number = "97",
+                            Street = "Ritchie Light",
+                            Zipcode = "701"
                         },
                         new
                         {
                             Id = 11,
-                            City = "Williamsonland",
+                            City = "Pagacton",
                             IsFranchiseStore = true,
-                            Name = "Edgar",
-                            Number = "99",
-                            Street = "Ahmad Glen",
-                            Zipcode = "535"
+                            Name = "Myrtie",
+                            Number = "94",
+                            Street = "Witting Lights",
+                            Zipcode = "2624"
                         },
                         new
                         {
                             Id = 12,
-                            City = "Zolaborough",
+                            City = "North Zena",
                             IsFranchiseStore = true,
-                            Name = "Vincenza",
-                            Number = "62",
-                            Street = "Carter Stream",
-                            Zipcode = "766"
+                            Name = "Kathryne",
+                            Number = "5",
+                            Street = "Breitenberg Road",
+                            Zipcode = "336"
                         },
                         new
                         {
                             Id = 13,
-                            City = "Eudorashire",
-                            IsFranchiseStore = true,
-                            Name = "German",
-                            Number = "17",
-                            Street = "Ernser Fork",
-                            Zipcode = "2239"
+                            City = "Kylieland",
+                            IsFranchiseStore = false,
+                            Name = "Kip",
+                            Number = "13",
+                            Street = "Hirthe Meadow",
+                            Zipcode = "1164"
                         },
                         new
                         {
                             Id = 14,
-                            City = "Batzview",
-                            IsFranchiseStore = true,
-                            Name = "Monserrat",
-                            Number = "60",
-                            Street = "Isaiah Dale",
-                            Zipcode = "742"
+                            City = "Lake Elnahaven",
+                            IsFranchiseStore = false,
+                            Name = "Antonio",
+                            Number = "96",
+                            Street = "Orn Forest",
+                            Zipcode = "59"
                         },
                         new
                         {
                             Id = 15,
-                            City = "West Rigobertomouth",
+                            City = "New Kenyaberg",
                             IsFranchiseStore = true,
-                            Name = "Billie",
-                            Number = "85",
-                            Street = "Lemke Trail",
-                            Zipcode = "1816"
+                            Name = "Enid",
+                            Number = "17",
+                            Street = "Fletcher Street",
+                            Zipcode = "2443"
                         },
                         new
                         {
                             Id = 16,
-                            City = "New Lourdes",
-                            IsFranchiseStore = true,
-                            Name = "Norma",
-                            Number = "34",
-                            Street = "Tad Circle",
-                            Zipcode = "997"
+                            City = "New Germanburgh",
+                            IsFranchiseStore = false,
+                            Name = "Easter",
+                            Number = "85",
+                            Street = "Crooks Mill",
+                            Zipcode = "2331"
                         },
                         new
                         {
                             Id = 17,
-                            City = "North Melissa",
+                            City = "Einoshire",
                             IsFranchiseStore = false,
-                            Name = "Geraldine",
-                            Number = "55",
-                            Street = "Sheldon Courts",
-                            Zipcode = "2853"
+                            Name = "Adela",
+                            Number = "51",
+                            Street = "Ullrich Burg",
+                            Zipcode = "1730"
                         },
                         new
                         {
                             Id = 18,
-                            City = "West Denis",
+                            City = "Gusikowskiville",
                             IsFranchiseStore = false,
-                            Name = "Rhea",
-                            Number = "98",
-                            Street = "Celestino Pass",
-                            Zipcode = "2533"
+                            Name = "Alfonso",
+                            Number = "61",
+                            Street = "Leannon Plains",
+                            Zipcode = "2816"
                         },
                         new
                         {
                             Id = 19,
-                            City = "Predovicshire",
+                            City = "Beckerview",
                             IsFranchiseStore = true,
-                            Name = "Amber",
-                            Number = "90",
-                            Street = "Collins Corners",
-                            Zipcode = "853"
+                            Name = "Kiarra",
+                            Number = "45",
+                            Street = "Hauck Crossing",
+                            Zipcode = "2709"
                         },
                         new
                         {
                             Id = 20,
-                            City = "Ebertburgh",
-                            IsFranchiseStore = false,
-                            Name = "Elwyn",
-                            Number = "99",
-                            Street = "Mueller Row",
-                            Zipcode = "248"
+                            City = "Lake Colt",
+                            IsFranchiseStore = true,
+                            Name = "Jovan",
+                            Number = "96",
+                            Street = "Amelie Hill",
+                            Zipcode = "2357"
                         });
                 });
 
-            modelBuilder.Entity("MyGameStore.Model.Person", b =>
+            modelBuilder.Entity("MyGameStore.Data.Model.Person", b =>
                 {
-                    b.HasOne("MyGameStore.Model.Store", "Store")
+                    b.HasOne("MyGameStore.Data.Model.Store", "Store")
                         .WithMany()
                         .HasForeignKey("StoreId")
                         .OnDelete(DeleteBehavior.Cascade)

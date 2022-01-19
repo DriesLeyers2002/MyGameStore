@@ -1,5 +1,6 @@
 ﻿using MyGameStore.Data.Context;
 using MyGameStore.Data.Model;
+using MyGameStore.Data.UOW;
 using MyGameStore.DLL.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -11,58 +12,34 @@ namespace MyGameStore.DLL.Services
 {
     public class StoreService : IStoreService
     {
-        private MyGameStoreContext _context;
+        private IUnitOfWork _unitOfWork;
 
-        public StoreService(MyGameStoreContext context)
+        public StoreService(IUnitOfWork unitOfWork)
         {
-            _context = context;
+            _unitOfWork = unitOfWork;
         }
 
         public void Delete(int id)
         {
-            Store store = new() { Id = id };
-
-            if (store is not null)
-            {
-                _context.Remove(store);
-                _context.SaveChanges();
-            }
-            else
-            {
-                throw new Exception();
-            }
+            _unitOfWork.StoreRepositorie.Delete(id);
+            _unitOfWork.Commit();
         }
 
         public List<Store> Get()
         {
-            return _context.Stores.ToList();
+            return _unitOfWork.StoreRepositorie.Get();
         }
 
         public void Post(Store store)
         {
-            if (_context.Stores.First(x => x.Name == store.Name) is null)
-            {
-                _context.Stores.Add(store);
-                _context.SaveChanges();
-            }
-            else {
-                throw new Exception();
-            }
+            _unitOfWork.StoreRepositorie.Post(store);
+            _unitOfWork.Commit();
         }
 
         public void Update(Store store)
         {
-            if (_context.Stores.First(x => x.Id == store.Id) is not null)
-            {
-                if (_context.Stores.First(x => x.Name == store.Name) is null)
-                {
-                    _context.Update(store);
-                    _context.SaveChanges();
-                }
-                throw new Exception();
-            }
-
-            throw new Exception();
+            _unitOfWork.StoreRepositorie.Update(store);
+            _unitOfWork.Commit();
         }
     }
 }

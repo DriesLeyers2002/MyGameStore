@@ -14,4 +14,12 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Exceptions\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyGameStore.Data\MyGameStore.Data.csproj" />
+  </ItemGroup>
+
 </Project>

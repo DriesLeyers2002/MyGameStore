@@ -63,26 +63,26 @@ namespace MyGameStore.Data.Migrations
                 columns: new[] { "Id", "Addition", "Place", "IsFranchiseStore", "Name", "Number", "Street", "Zipcode" },
                 values: new object[,]
                 {
-                    { 1, null, "Haleighshire", true, "Kadin", "64", "Frami Harbor", "1434" },
-                    { 18, null, "West Denis", false, "Rhea", "98", "Celestino Pass", "2533" },
-                    { 17, null, "North Melissa", false, "Geraldine", "55", "Sheldon Courts", "2853" },
-                    { 16, null, "New Lourdes", true, "Norma", "34", "Tad Circle", "997" },
-                    { 15, null, "West Rigobertomouth", true, "Billie", "85", "Lemke Trail", "1816" },
-                    { 14, null, "Batzview", true, "Monserrat", "60", "Isaiah Dale", "742" },
-                    { 13, null, "Eudorashire", true, "German", "17", "Ernser Fork", "2239" },
-                    { 12, null, "Zolaborough", true, "Vincenza", "62", "Carter Stream", "766" },
-                    { 11, null, "Williamsonland", true, "Edgar", "99", "Ahmad Glen", "535" },
-                    { 10, null, "West Price", false, "Valentin", "12", "Alena Meadows", "116" },
-                    { 9, null, "Stammbury", true, "Kristina", "26", "Cleo Burg", "183" },
-                    { 8, null, "East Monroehaven", true, "Morris", "38", "Barbara Ridge", "1125" },
-                    { 7, null, "Milofort", true, "Alisha", "6", "Schulist Cove", "797" },
-                    { 6, null, "New Blancaside", true, "Sophia", "17", "Terry Mountains", "1352" },
-                    { 5, null, "Jadeburgh", true, "Jamey", "9", "Katarina Mill", "1458" },
-                    { 4, null, "New Laurenville", true, "Zoila", "72", "Fahey Falls", "2507" },
-                    { 3, null, "Frederikville", true, "Kenny", "10", "Hessel Walks", "2944" },
-                    { 2, null, "Gregshire", true, "Creola", "3", "Nikolaus Pike", "1007" },
-                    { 19, null, "Predovicshire", true, "Amber", "90", "Collins Corners", "853" },
-                    { 20, null, "Ebertburgh", false, "Elwyn", "99", "Mueller Row", "248" }
+                    { 1, null, "Port Lauriane", true, "Milton", "77", "Sam Mews", "2698" },
+                    { 18, null, "Gusikowskiville", false, "Alfonso", "61", "Leannon Plains", "2816" },
+                    { 17, null, "Einoshire", false, "Adela", "51", "Ullrich Burg", "1730" },
+                    { 16, null, "New Germanburgh", false, "Easter", "85", "Crooks Mill", "2331" },
+                    { 15, null, "New Kenyaberg", true, "Enid", "17", "Fletcher Street", "2443" },
+                    { 14, null, "Lake Elnahaven", false, "Antonio", "96", "Orn Forest", "59" },
+                    { 13, null, "Kylieland", false, "Kip", "13", "Hirthe Meadow", "1164" },
+                    { 12, null, "North Zena", true, "Kathryne", "5", "Breitenberg Road", "336" },
+                    { 11, null, "Pagacton", true, "Myrtie", "94", "Witting Lights", "2624" },
+                    { 10, null, "Hamillshire", false, "Valentine", "97", "Ritchie Light", "701" },
+                    { 9, null, "Reneeshire", true, "Ashtyn", "19", "Ward Vista", "1611" },
+                    { 8, null, "North Robbieburgh", false, "Darlene", "84", "Kulas Roads", "228" },
+                    { 7, null, "New Llewellyn", true, "Chyna", "82", "Gregory Fork", "442" },
+                    { 6, null, "Port Milanstad", false, "Will", "84", "Mireille Park", "2309" },
+                    { 5, null, "South Rickeyborough", false, "Jaylon", "7", "Kohler Junction", "1334" },
+                    { 4, null, "South Raystad", true, "Tavares", "33", "Lowe Skyway", "610" },
+                    { 3, null, "West Cortneymouth", true, "Tony", "49", "Dooley Drives", "2510" },
+                    { 2, null, "New Amiya", false, "Raoul", "93", "Zemlak Harbor", "1468" },
+                    { 19, null, "Beckerview", true, "Kiarra", "45", "Hauck Crossing", "2709" },
+                    { 20, null, "Lake Colt", true, "Jovan", "96", "Amelie Hill", "2357" }
                 });
 
             migrationBuilder.InsertData(
@@ -91,16 +91,16 @@ namespace MyGameStore.Data.Migrations
                 columns: new[] { "Id", "EmailAddress", "FirstName", "Gender", "LastName", "StoreId" },
                 values: new object[,]
                 {
-                    { 1, "liam_farrell@erdmananderson.info", "Sadie", 1, "Ruecker", 2 },
-                    { 2, "myrtis@wunsch.ca", "Magnus", 1, "Ziemann", 2 },
-                    { 3, "abe@kozey.ca", "Felicity", 1, "Wilderman", 2 },
-                    { 4, "reinhold.lang@binskuphal.us", "Raul", 1, "McGlynn", 2 },
-                    { 5, "elijah@hyatt.ca", "Dominic", 1, "Hirthe", 2 },
-                    { 6, "lauriane.hegmann@strosinritchie.ca", "Tate", 1, "Rath", 2 },
-                    { 7, "amya@stroman.co.uk", "Genoveva", 1, "Harvey", 2 },
-                    { 8, "cordell.rempel@willmshessel.com", "Trinity", 1, "Ryan", 2 },
-                    { 9, "hillard@homenick.us", "Kenna", 1, "Kreiger", 2 },
-                    { 10, "hubert.wisoky@jakubowski.name", "Andrew", 1, "Prosacco", 2 }
+                    { 1, "bettye@kubreichel.us", "Lucinda", 1, "Gorczany", 2 },
+                    { 2, "miguel@tremblay.ca", "Emily", 1, "Koelpin", 2 },
+                    { 3, "izabella@bergnaum.biz", "Dustin", 1, "Krajcik", 2 },
+                    { 4, "nicolas_kub@yundtbernier.com", "Keon", 1, "Blick", 2 },
+                    { 5, "everett_wisozk@wisoky.name", "Major", 1, "Murphy", 2 },
+                    { 6, "quentin.senger@abbott.com", "Elisa", 1, "Boehm", 2 },
+                    { 7, "gudrun@abshire.name", "Karlee", 1, "Becker", 2 },
+                    { 8, "darrick@bergealtenwerth.co.uk", "Faustino", 1, "Funk", 2 },
+                    { 9, "johan_swift@crooks.name", "Dolores", 1, "Kirlin", 2 },
+                    { 10, "felix_tillman@rippin.us", "Kyleigh", 1, "Gottlieb", 2 }
                 });
 
             migrationBuilder.CreateIndex(

@@ -112,7 +112,6 @@ C:\Users\dries\Documents\GitHub\MyGameStore\MyGameStore\MyGameStore\obj\Debug\ne
 C:\Users\dries\Documents\GitHub\MyGameStore\MyGameStore\MyGameStore\obj\Debug\net5.0\MyGameStore.AssemblyInfoInputs.cache
 C:\Users\dries\Documents\GitHub\MyGameStore\MyGameStore\MyGameStore\obj\Debug\net5.0\MyGameStore.AssemblyInfo.cs
 C:\Users\dries\Documents\GitHub\MyGameStore\MyGameStore\MyGameStore\obj\Debug\net5.0\MyGameStore.csproj.CoreCompileInputs.cache
-C:\Users\dries\Documents\GitHub\MyGameStore\MyGameStore\MyGameStore\obj\Debug\net5.0\MyGameStore.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\dries\Documents\GitHub\MyGameStore\MyGameStore\MyGameStore\obj\Debug\net5.0\MyGameStore.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\dries\Documents\GitHub\MyGameStore\MyGameStore\MyGameStore\obj\Debug\net5.0\staticwebassets\MyGameStore.StaticWebAssets.Manifest.cache
 C:\Users\dries\Documents\GitHub\MyGameStore\MyGameStore\MyGameStore\obj\Debug\net5.0\staticwebassets\MyGameStore.StaticWebAssets.xml
@@ -122,3 +121,8 @@ C:\Users\dries\Documents\GitHub\MyGameStore\MyGameStore\MyGameStore\obj\Debug\ne
 C:\Users\dries\Documents\GitHub\MyGameStore\MyGameStore\MyGameStore\obj\Debug\net5.0\ref\MyGameStore.dll
 C:\Users\dries\Documents\GitHub\MyGameStore\MyGameStore\MyGameStore\obj\Debug\net5.0\MyGameStore.pdb
 C:\Users\dries\Documents\GitHub\MyGameStore\MyGameStore\MyGameStore\obj\Debug\net5.0\MyGameStore.genruntimeconfig.cache
+C:\Users\dries\Documents\GitHub\MyGameStore\MyGameStore\MyGameStore\bin\Debug\net5.0\MyGameStore.Data.dll
+C:\Users\dries\Documents\GitHub\MyGameStore\MyGameStore\MyGameStore\bin\Debug\net5.0\MyGameStore.DLL.dll
+C:\Users\dries\Documents\GitHub\MyGameStore\MyGameStore\MyGameStore\bin\Debug\net5.0\MyGameStore.DLL.pdb
+C:\Users\dries\Documents\GitHub\MyGameStore\MyGameStore\MyGameStore\bin\Debug\net5.0\MyGameStore.Data.pdb
+C:\Users\dries\Documents\GitHub\MyGameStore\MyGameStore\MyGameStore\obj\Debug\net5.0\MyGameStore.csproj.CopyComplete
