@@ -1,0 +1,28 @@
+ "ConnectionStrings": {
+    "MyGameStore": "Data Source=(localdb)\\MSSQLLocalDB; Database=MyGameStore;Integrated Security=True"
+  },
+
+services.AddDbContext<MyGameStoreContext>(options => options.UseSqlServer("name=ConnectionStrings:MyGameStore"));
+
+add-migration InitialMigration
+update-database
+
+Wat komt er in de Data Access Layer?
+• Map met Entity Configuration classes (Zie les 3)
+• Map met DbContext class(es) (Zie les 2)
+• Map met Entity classes (Zie les 2)
+• Map met Migrations (Gegenereerd bij aanmaken migration)
+• Map met repositories
+• Map UOW (Unit Of Work)
+
+ Wat komt er in de Business Logic/Service Layer?
+• Map met Interfaces voor de Service classes
+• Map met Service classes
+• Map met Extensions
+• Map met Exceptions
+
+ASP.NET Core Web App (Model-View-Controller)
+Microsoft.EntityFrameworkCore.Tools
+Microsoft.EntityFrameworkCore.SqlServer
+Microsoft.VisualStudio.Web.CodeGeneration (enkel bij asp.net core web app(wordt automatish geinstalleerd))
+Microsoft.EntityFrameworkCore (moet ni ma als ge problemen hebt)
